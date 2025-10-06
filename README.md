@@ -1,4 +1,4 @@
-#Welcome
+# Welcome
 This repository contains an empirical economic analysis of the relationship between education levels and labor participation rates (LFPR) across the 50 states + DC from 2010-2018. By employing fixed-effects regressions to the combined FRED and US Cenus Bureau data sets, I analyze the intra-state and inter-state correlations between my two variables of focus as a part of my first academic exploration of applied econometrics. While limited in scope, resources, and availability of larger datasets, this project provided an extensive introduction to the tools that I hope to carry deep into a career in economic research, utlizing numerous python libraries, R, Tableau, terminal / git, and LaTex while allowing me to further develop my interest in the intersection of development and labor economics with data science.
 
 # Repository Structure
