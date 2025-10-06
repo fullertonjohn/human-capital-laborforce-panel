@@ -1,12 +1,16 @@
+#install libraries
 library(tidyverse)
 library(fixest)
 library(modelsummary)
 library(janitor)
+#import, preview data
 data <- read_csv("data/merged_state_panel.csv")
 glimpse(data)
 rm(df)
 summary(data)
+#compute Pearson correlation coefficient
 cor(data$lfp_sa, data$bachelors_share, use = "complete.obs")
+# generate lsr dot plot
 ggplot(data, aes(x = bachelors_share, y = lfp_sa)) +
   geom_point(alpha = 0.6) +
   geom_smooth(method = "lm", se = TRUE, color = "darkred") +
