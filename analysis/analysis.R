@@ -23,7 +23,7 @@ ggplot(data, aes(x = bachelors_share, y = lfp_sa)) +
   summary(lm_model)
   model_fe <- feols(lfp_sa ~ bachelors_share | state_abbr + year, data = data)
   summary(model_fe)
-  ggsave("outputs/laborforce_vs_education.png", width = 8, height = 5)
+  #ggsave("outputs/laborforce_vs_education.png", width = 8, height = 5)
   
   install.packages("modelsummary")
   library(modelsummary)
